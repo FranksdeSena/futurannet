@@ -132,6 +132,14 @@ li {
   margin-right: auto;
 }
 
+.main-deco2 {
+  display: block;
+  display:flex;
+  margin-top: -60px;
+  padding-bottom: 25px;
+
+}
+
 .main-info {
   display: flex;
 }
@@ -173,6 +181,71 @@ main p {
 
 .btn:hover {
   background-color: #ACD5F4;
+}
+
+@media(max-width: 1115px) {
+  .main h1 {
+    font-size: 60px;
+    margin-left: 10px;
+  }
+  .main p {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .btn {
+    padding: 18px 30px;
+    margin-left: 10px;
+    font-size: 18px;
+    
+  }
+  .main-deco2 {
+    margin-left: 12px;
+    margin-bottom: 30px;
+  }
+  .btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 18px;
+    
+  }
+}
+
+@media(max-width: 800px) {
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+  .main h1 {
+    font-size: 60px;
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+  .main p {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .main-deco2 {
+    margin-left: 10px;
+  }
+  
+  
+}
+
+@media(max-width: 980px) {
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-deco2 {
+    display: none;
+  }
+  
 }
 
 

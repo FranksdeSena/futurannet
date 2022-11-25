@@ -17,6 +17,8 @@ body {
   --backgraund-btn:#CC2BEB;
   --backgraund-main:#2e2e2e;
   --backgraund-body:#f9f4f4;
+  --backgraund-deco:#bf50d4;
+  --backgraund-btn-houver:#ACD5F4;
 }
 
 a {
@@ -180,7 +182,7 @@ main p {
 }
 
 .btn:hover {
-  background-color: #ACD5F4;
+  background-color: var(--backgraund-btn-houver);
 }
 
 @media(max-width: 1115px) {
@@ -207,6 +209,13 @@ main p {
     margin-left: 10px;
     font-size: 18px;
     
+  }
+}
+
+@media(max-width: 9050px) {
+  .main {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -247,6 +256,222 @@ main p {
   }
   
 }
+
+/*Sectio Info*/
+.section-bg {
+  display: flex;
+  margin-top: 180px;
+  background: linear-gradient(to right, var(--backgraund-body) 40%, var(--backgraund-main) 0%);
+}
+
+.section-banner {
+  width: 800px;
+  height: 500px;
+  padding-bottom: 45px;
+}
+
+.sectio-sub-info-titulo {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  line-height: 95%;
+  position: relative;
+}
+
+.sectio-sub-info-titulo::before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  
+  margin-left: -10px;
+  background: var(--backgraund-deco);
+  position: absolute;
+}
+
+.section-paragrafo1 {
+  font-family: "Rubik";
+  font-weight: 500;
+  color: var(--color-subtext-main);
+  font-size: 24px;
+  line-height:127% ;
+  margin-top: 60px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.section-paragrafo1::before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  top: 0;
+  margin-left: -10px;
+  background: var(--backgraund-deco);
+  position: absolute;
+}
+
+.section-paragrafo2 {
+  font-family: "Poppins";
+  font-weight: 500;
+  color: var(--color-subtext-main);
+  font-size: 16px;
+  line-height:175% ;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right:10px;
+}
+
+.section-info a {
+  display: inline-block;
+  padding: 16px 30px;
+  border-radius: 5px;
+  background-color: var(--backgraund-btn);
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 120px;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+  color: var(--color-header-bg-nav);
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.section-info a:hover {
+  background-color: var(--backgraund-btn-houver);
+}
+
+.section-info img {
+  display: flex;
+  margin-left: 22px;
+  display: block;
+  rotate: -10deg;
+}
+
+.deco-info-2 {
+  display: block;
+  margin-top: -10px;
+  rotate: 32deg;
+}
+
+@media(max-width: 1200px) {
+  .section-banner {
+    width: 600px;
+    height: 400px;
+  }
+  .section-bg {
+    margin-top: 80px;
+  }
+  .sectio-sub-info-titulo{
+    font-size: 35px;
+  }
+  .section-paragrafo1 {
+    font-size: 20px;
+  }
+  .section-paragrafo2  {
+    font-size: 14px;
+    
+  }
+  .section-info a {
+    padding: 14px 25px;
+    margin-top: 40px;
+  }
+  .section-info img  {
+    display: none;
+  }
+}
+
+@media(max-width: 1060px) {
+  .section-paragrafo1 {
+    font-size: 18px;
+  }
+}
+@media(max-width: 900px) {
+  .section-paragrafo1 {
+    font-size: 18px;
+  }
+}
+@media(max-width: 800px) {
+  .section-bg {
+    height: 400px;
+  }
+  .section-banner {
+    width: 400px;
+    height: 300px;
+  }
+  .section-paragrafo1 {
+    font-size: 14px;
+    margin-top: 50px;
+  }
+  .section-paragrafo2 {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .sectio-sub-info-titulo {
+    font-size: 30px;
+  }
+  .section-info a {
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+}
+
+@media(max-width: 660px) {
+  .section-banner {
+    width: 300px;
+    height: 200px;
+  }
+  .section-bg {
+    height: 300px;
+  }
+  .sectio-sub-info-titulo {
+    font-size: 20px;
+  }
+  .section-info a {
+    padding: 8px 20px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 620px) {
+  .section-info a {
+    display: none;
+  }
+  .section-paragrafo1 {
+    font-size: 12px;
+    margin-top: 40px;
+  }
+  .section-paragrafo2 {
+    margin-top: 8px;
+  }
+}
+/*Section planos */
+.section-plano {
+  
+  margin-top: 186px;
+ 
+  
+}
+
+.section-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.plano1 {
+  width: 524px;
+  height: 589px;
+  background-color: var(--color-header-bg-nav);
+}
+
+
+
+
+
 
 
 
